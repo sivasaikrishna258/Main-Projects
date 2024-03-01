@@ -9,33 +9,18 @@ import com.CRM.qa.BaseClass.TestBase;
 import com.CRM.qa.Pages.HomePage;
 import com.CRM.qa.Pages.LoginPage;
 
-public class LoginTest extends TestBase {
+public class LoginTest extends BaseTest {
 	
 	LoginPage loginpage;
 	HomePage homepage;
 	
-	public LoginTest(){
-		super();
-	}
-	
-	@BeforeMethod
-	public void setup() {
-		initialization();
-		loginpage=new LoginPage();
-		
-	}
 
 	@Test
 	public void LogintoCRMApplication() {
-//		loginpage.clickOnLoginLink();
+		loginpage=new LoginPage();
 		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 	}
 	
-	
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
-	}
 	
 	
 

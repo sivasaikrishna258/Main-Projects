@@ -14,7 +14,7 @@ import com.CRM.qa.Pages.ContactsPage;
 import com.CRM.qa.Pages.HomePage;
 import com.CRM.qa.Pages.LoginPage;
 
-public class HomaPageTest extends TestBase {
+public class HomaPageTest extends BaseTest {
 	
 	LoginPage loginpage;
 	HomePage homepage;
@@ -22,16 +22,6 @@ public class HomaPageTest extends TestBase {
 	CalendarPage calendarpage;
 	CompaniesPage companiespage;
 	
-	public HomaPageTest(){
-		super();
-	}
-	
-	@BeforeMethod
-	public void setup() {
-		initialization();
-		loginpage=new LoginPage();
-		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
-	}
 	
 	@Test
 	public void verifyUserNameTest() {
@@ -52,13 +42,6 @@ public class HomaPageTest extends TestBase {
 	@Test(priority=2)
 	public void clickOnCompaniesLinkTest() {
 		companiespage=homepage.clickOnCompaniesrLink();
-	}
-	
-	
-	
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
 	}
 
 }

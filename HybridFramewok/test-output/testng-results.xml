@@ -2,24 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T11:28:24Z" name="Default suite" finished-at="2024-02-29T11:29:11Z" duration-ms="46363">
+  <suite started-at="2024-03-01T10:52:31Z" name="Default suite" finished-at="2024-03-01T10:53:12Z" duration-ms="41256">
     <groups>
     </groups>
-    <test started-at="2024-02-29T11:28:24Z" name="Default test" finished-at="2024-02-29T11:29:11Z" duration-ms="46363">
-      <class name="com.CRM.qa.Testcases.Roughwork">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:58:24Z" name="setup" finished-at="2024-02-29T16:58:56Z" duration-ms="31792" status="PASS">
+    <test started-at="2024-03-01T10:52:31Z" name="Default test" finished-at="2024-03-01T10:53:12Z" duration-ms="41256">
+      <class name="com.CRM.qa.Testcases.ContactsPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.Testcases.ContactsPageTest@2b40ff9c]" started-at="2024-03-01T16:22:31Z" name="setup" finished-at="2024-03-01T16:22:47Z" duration-ms="15789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:58:56Z" name="login" finished-at="2024-02-29T16:59:11Z" duration-ms="14555" status="PASS">
+        <test-method signature="createNewUserOnContactsPageTest()[pri:0, instance:com.CRM.qa.Testcases.ContactsPageTest@2b40ff9c]" started-at="2024-03-01T16:22:47Z" name="createNewUserOnContactsPageTest" finished-at="2024-03-01T16:23:12Z" duration-ms="25449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CRM.qa.Testcases.Roughwork@7d9d0818]" started-at="2024-02-29T16:59:11Z" name="teardown" finished-at="2024-02-29T16:59:11Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.CRM.qa.Testcases.Roughwork -->
+        </test-method> <!-- createNewUserOnContactsPageTest -->
+      </class> <!-- com.CRM.qa.Testcases.ContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
