@@ -1,7 +1,5 @@
 package com.CRM.qa.Testcases;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.CRM.qa.BaseClass.TestBase;
@@ -17,25 +15,16 @@ public class CompaniesPageTest extends TestBase {
 	public CompaniesPageTest() {
 		super();
 	}
-	
-	@BeforeMethod
-	public void setup() {
-		initialization();
-		 loginpage=new LoginPage();
-		 homepage = loginpage.login(property.getProperty("username"), property.getProperty("password"));
-		 companiesPage = homepage.clickOnCompaniesrLink();
-	}
-	
+
+
 	@Test
 	public void enterNewComapnyyDetailsOnCompaniesPageTest() {
+		loginpage=new LoginPage();
+		homepage = loginpage.login(property.getProperty("username"), property.getProperty("password"));
+		companiesPage = homepage.clickOnCompaniesrLink();
 		companiesPage.clickOnCreateButton();
-		
+
 	}
-	
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
-	}
-	
+
 
 }

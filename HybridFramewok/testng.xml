@@ -7,7 +7,9 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.CRM.qa.Testcases.LoginTest"/>
+		 <class name="com.CRM.qa.Testcases.LoginTest"/>
+      <class name="com.CRM.qa.Testcases.HomaPageTest"/>
+       <class name="com.CRM.qa.Testcases.CalendarPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

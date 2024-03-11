@@ -32,7 +32,7 @@ public class ListnerClass extends TestBase implements ITestListener{
 		reports.attachReporter(htmlReporter);
 		
 		//add system information/environments info to reports
-		reports.setSystemInfo("Machine", "RaviPc");
+		reports.setSystemInfo("Machine", "sai");
 		reports.setSystemInfo("OS","Windows11");
 		
 		
@@ -71,7 +71,9 @@ public class ListnerClass extends TestBase implements ITestListener{
 	    test=reports.createTest(result.getName());
 	    test.log(Status.FAIL, MarkupHelper.createLabel("Name of the skip test case is: "+result.getName(),ExtentColor.RED));
 	   
-	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE );
+	    
+	    
 		String currentDir = System.getProperty("user.dir");
 		try {
 			FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + result.getName() + ".png"));
@@ -83,7 +85,7 @@ public class ListnerClass extends TestBase implements ITestListener{
 	    if(screenShotFile.exists())
 	    {
 	    	try {
-				test.fail("Captured Screenshot is below:" +test.addScreenCaptureFromPath(currentDir));
+				test.fail("Captured Screenshot is below:" +test.addScreenCaptureFromPath("C:\\Users\\Sai Prathap\\git\\Main-Projects\\HybridFramewok\\screenshots\\"+result.getName()+".png"));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -99,7 +101,7 @@ public class ListnerClass extends TestBase implements ITestListener{
 					+ "ed");
 		}
 	    
-	    
+	
 	  }
 
 

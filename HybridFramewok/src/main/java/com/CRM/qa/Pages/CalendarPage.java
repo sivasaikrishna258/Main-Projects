@@ -5,10 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.CRM.qa.BaseClass.TestBase;
+import com.CRM.qa.Utilities.UtilClass;
 
 public class CalendarPage extends TestBase {
 	
-	@FindBy(xpath="//*[contains(text(),'Calendar')]")
+	@FindBy(xpath="//*[contains(text(),'Calendar1')]")
 	WebElement eventslink;
 	
 	public CalendarPage() {
@@ -16,6 +17,7 @@ public class CalendarPage extends TestBase {
 	}
 
 	public void clickOnEventsLink() {
-		eventslink.click();
+		UtilClass.clickOn(driver, eventslink, 30);
+		
 	}
 }

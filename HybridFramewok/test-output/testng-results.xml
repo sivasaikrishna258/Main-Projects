@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T10:52:31Z" name="Default suite" finished-at="2024-03-01T10:53:12Z" duration-ms="41256">
+  <suite started-at="2024-03-09T03:58:38Z" name="Default suite" finished-at="2024-03-09T03:59:11Z" duration-ms="32341">
     <groups>
     </groups>
-    <test started-at="2024-03-01T10:52:31Z" name="Default test" finished-at="2024-03-01T10:53:12Z" duration-ms="41256">
-      <class name="com.CRM.qa.Testcases.ContactsPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.Testcases.ContactsPageTest@2b40ff9c]" started-at="2024-03-01T16:22:31Z" name="setup" finished-at="2024-03-01T16:22:47Z" duration-ms="15789" status="PASS">
+    <test started-at="2024-03-09T03:58:38Z" name="Default test" finished-at="2024-03-09T03:59:11Z" duration-ms="32341">
+      <class name="com.CRM.qa.Testcases.SignUpPageTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.CRM.qa.Testcases.SignUpPageTest@183ec003]" started-at="2024-03-09T09:28:38Z" name="initialization" finished-at="2024-03-09T09:28:43Z" duration-ms="4255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createNewUserOnContactsPageTest()[pri:0, instance:com.CRM.qa.Testcases.ContactsPageTest@2b40ff9c]" started-at="2024-03-01T16:22:47Z" name="createNewUserOnContactsPageTest" finished-at="2024-03-01T16:23:12Z" duration-ms="25449" status="PASS">
+        </test-method> <!-- initialization -->
+        <test-method signature="newUserRegistration()[pri:0, instance:com.CRM.qa.Testcases.SignUpPageTest@183ec003]" started-at="2024-03-09T09:28:43Z" name="newUserRegistration" finished-at="2024-03-09T09:29:11Z" duration-ms="28069" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewUserOnContactsPageTest -->
-      </class> <!-- com.CRM.qa.Testcases.ContactsPageTest -->
+        </test-method> <!-- newUserRegistration -->
+      </class> <!-- com.CRM.qa.Testcases.SignUpPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
