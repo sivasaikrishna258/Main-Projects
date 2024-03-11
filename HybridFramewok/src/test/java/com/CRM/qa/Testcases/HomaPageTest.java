@@ -14,7 +14,9 @@ import com.CRM.qa.Pages.ContactsPage;
 import com.CRM.qa.Pages.HomePage;
 import com.CRM.qa.Pages.LoginPage;
 
-public class HomaPageTest extends BaseTest {
+
+
+public class HomaPageTest extends TestBase {
 	
 	LoginPage loginpage;
 	HomePage homepage;
@@ -23,24 +25,39 @@ public class HomaPageTest extends BaseTest {
 	CompaniesPage companiespage;
 	
 	
-	@Test
+	
+	
+	public HomaPageTest() {
+		super();
+	}
+
+	@Test(priority=3)
 	public void verifyUserNameTest() {
+		loginpage=new LoginPage();
+		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 	Assert.assertTrue(homepage.validationOfUserOnHeader(), "username is correect");
+	
 	}
 	
 	@Test(priority=0)
 	public void clickOnContactsLinkTest() {
+		loginpage=new LoginPage();
+		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 		contactspage=homepage.clickOnContactsLink();
 		
 	}
 	
 	@Test(priority=1)
 	public void clickOncalendarLinkTest() {
+		loginpage=new LoginPage();
+		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 		calendarpage=homepage.clickOnCalenderLink();
 	}
 	
 	@Test(priority=2)
 	public void clickOnCompaniesLinkTest() {
+		loginpage=new LoginPage();
+		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 		companiespage=homepage.clickOnCompaniesrLink();
 	}
 

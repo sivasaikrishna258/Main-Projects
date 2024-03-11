@@ -9,17 +9,23 @@ import com.CRM.qa.BaseClass.TestBase;
 import com.CRM.qa.Pages.HomePage;
 import com.CRM.qa.Pages.LoginPage;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends TestBase {
 	
 	LoginPage loginpage;
 	HomePage homepage;
 	
+	public LoginTest() {
+		super();
+	}
 
 	@Test
 	public void LogintoCRMApplication() {
 		loginpage=new LoginPage();
 		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 	}
+
+
+	
 	
 	
 	

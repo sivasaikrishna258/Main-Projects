@@ -7,6 +7,33 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.CRM.qa.Testcases.LoginTest"/>
+      <class name="com.CRM.qa.Testcases.HomaPageTest"/>
+      <class name="com.CRM.qa.Testcases.CalendarPageTest"/>
     </classes>
   </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.CRM.qa.Testcases.HomaPageTest">
+        <methods>
+          <include name="verifyUserNameTest"/>
+          <include name="initialization"/>
+          <include name="clickOnContactsLinkTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.CRM.qa.Testcases.HomaPageTest -->
+      <class name="com.CRM.qa.Testcases.CalendarPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="clickOnCalendarTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.CRM.qa.Testcases.CalendarPageTest -->
+      <class name="com.CRM.qa.Testcases.LoginTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.CRM.qa.Testcases.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

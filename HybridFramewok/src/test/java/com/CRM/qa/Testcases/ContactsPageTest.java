@@ -2,15 +2,24 @@ package com.CRM.qa.Testcases;
 
 import org.testng.annotations.Test;
 
+import com.CRM.qa.BaseClass.TestBase;
 import com.CRM.qa.Pages.ContactsPage;
 import com.CRM.qa.Pages.HomePage;
 import com.CRM.qa.Pages.LoginPage;
 
-public class ContactsPageTest extends BaseTest{
+public class ContactsPageTest extends TestBase{
 
 	LoginPage loginpage;;
 	HomePage homepage;
 	ContactsPage contactspage;
+	
+	
+
+	public ContactsPageTest() {
+		super();
+	}
+
+
 
 	@Test
 	public void createNewUserOnContactsPageTest() {

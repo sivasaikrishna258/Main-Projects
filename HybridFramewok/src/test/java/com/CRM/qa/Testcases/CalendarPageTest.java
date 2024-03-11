@@ -26,24 +26,13 @@ public class CalendarPageTest extends TestBase{
 		super();
 	}
 	
-	@BeforeMethod
-	public void setup() {
-		initialization();
-		loginpage=new LoginPage();
-		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
-	}
-	
 	@Test
 	public void clickOnCalendarTest() {
-
+		loginpage=new LoginPage();
+		homepage=loginpage.login(property.getProperty("username"), property.getProperty("password"));
 		calendarpage=homepage.clickOnCalenderLink();
 		calendarpage.clickOnEventsLink();
 	
 	}
-	
-//	@AfterMethod
-//	public void teardown() {
-//		driver.quit();
-//	}
 
 }
